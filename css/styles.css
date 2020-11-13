@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    border-top: 10px #ee0379 solid;
+}
+
+body {
+    background-color: #1e2724;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    color: #ee0379;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-wrapper {
+    width: 75%;
+    max-width: 500px;
+    background-color: transparent;
+    color: #ee0379;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.quote {
+    position: relative;
+    animation-name: FromTheTop;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  FromTheTop {
+    0% {
+        top: -600px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.quote-author {
+    margin: 0.5rem;
+    padding: 1rem;
+    align-self: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    animation-name: FromTheRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes FromTheRight {
+    0% {
+        right: -600px;
+    }
+
+    100% {
+          right: 0px;
+    }
+}
+
+
+#btn {
+    position: relative;
+    top: 90%;
+    background-color: transparent;
+    color: #ee0379;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border-color: #ee0379;
+    outline: none;
+    box-shadow: 5px 5px 20px 5px black;
+}
